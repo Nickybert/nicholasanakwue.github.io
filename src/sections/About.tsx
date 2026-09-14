@@ -1,6 +1,5 @@
 const About = () => (
-  {/* bg-[#F4F6F8] with section-light (which has transitions built-in via index.css) */}
-  <section id="about" className="relative w-full min-h-[80vh] section-light overflow-hidden z-20 py-[7vh] lg:py-[9vh]">
+  <section id="about" className="relative w-full min-h-[80vh] section-light overflow-hidden z-20 py-[7vh] lg:py-[9vh] transition-colors duration-300">
     <div className="w-full h-full px-4 sm:px-6 lg:px-[6vw] flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-[4vw]">
 
      <div className="animate-slide-left w-[65vw] sm:w-[48vw] lg:w-[38vw] h-[40vh] lg:h-[65vh] shrink-0 flex items-center justify-center">
@@ -11,16 +10,13 @@ const About = () => (
         />
       </div>
       
-      {/*Div container with my bio*/}
       <div className="animate-slide-right w-full lg:w-[52vw] max-w-2xl">
         <div className="section-label">About</div>
         
-        {/* text-[#0B0D10] with text-foreground */}
         <h2 className="text-[clamp(22px,2.2vw,30px)] font-semibold text-foreground transition-colors duration-300 mb-5">
           Digital Politics &amp; Social Movements Researcher
         </h2>
 
-        {/* text-[#0B0D10]/80 with text-foreground/80 */}
         <div className="space-y-4 text-[15px] lg:text-[15.5px] leading-[1.75] text-foreground/80 transition-colors duration-300">
           <p>
             I am a recipient of the{' '}
@@ -54,10 +50,8 @@ const About = () => (
           </p>
         </div>
 
-        {/* Keywords */}
         <div className="animate-on-scroll delay-2 mt-6 flex flex-wrap gap-2">
           {['#EndSARS', '#ThisFlag', 'Network Analysis', 'Connective Action', 'ERGM', 'Twitter', 'DyNAM'].map((tag) => (
-            {/* border-[#0B0D10]/12 with border-border, text-[#0B0D10]/60 with text-muted-foreground, and bg-white with bg-card */}
             <span key={tag} className="font-mono text-[0.6rem] tracking-[0.1em] uppercase px-2.5 py-1 rounded-full border border-border text-muted-foreground bg-card transition-colors duration-300">
               {tag}
             </span>
